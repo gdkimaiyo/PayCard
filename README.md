@@ -9,8 +9,10 @@ A challenge organized by:
 
 [Grow with Google](https://grow.google/)
 
-#Gradr
+#MyGradr
 
 #PayCard
 
-#150DaysofALC
+#150DaysofALC4
+
+#GrowWithGoogle
