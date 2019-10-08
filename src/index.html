@@ -182,12 +182,7 @@
           country: 'Ghana'
         }
       ];
-      
-      /* const startApp = () => {
-        // invoke fetch bill
-        fetchBill();
-      }; */
-      
+
       // App state
       const appState = {};
       
@@ -214,14 +209,6 @@
       // card expiry date field
       const expiryDateFormatIsValid = (target) => {
         //expiryDateFormatIsValid
-        /*const expiryDateFormatIsValid = (field) =>{
-          if(field.value){
-            if((field.value.indexOf('/') == 2) && (field.value.length == 5)){
-              return true;
-            }
-            return false;
-          }
-        } */
         const expiry_date_field = /^((0[1-9])|(1[0-2]))\/\d{2}$/;
         return expiry_date_field.test(target);
       };
@@ -249,21 +236,7 @@
         return cardType;
       };
       //validateCardExpiryDate
-      const validateCardExpiryDate = ({target}) => { 
-      /*
-      const validateCardExpiryDate = ({target}) =>{
-        const m = target.value.split('/')[0];
-        const y = target.value.split('/')[1];
-        const date = new Date(`${m}/01/${y}`);
-      	if (expiryDateFormatIsValid(target) && date > new Date()){
-          flagIfInvalid(target, true);
-          return true;
-        }else{
-          flagIfInvalid(target, false);
-          return false;
-        }
-      };
-      */       
+      const validateCardExpiryDate = ({target}) => {       
         if (expiryDateFormatIsValid(target.value)) {
           console.log("True:");
           let date_arr = target.value.split("/");
